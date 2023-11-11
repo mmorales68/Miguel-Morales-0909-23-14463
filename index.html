@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Distribuidora Hernandez</title>
+        <link href="styleformulario.css" rel="stylesheet" type="text/css">
+        <script src="javaScript.js"></script>
+    </head>
+
+    <body>
+
+        <form name="form1" action="" id="form1" > 
+            <div id="divcontenedor" class="divA" >
+                <h1>Calculo de Salario Distribuidora Hernandez</h1>
+            </div>
+            
+            <b><br><br> Ingrese su nombre  </b>
+            <P><div class="divinput"> 
+            <input type="text" placeholder="Nombre" id="nombre" autofocus >   
+            </div>
+            
+
+            <p><b>Seleccione el puesto: </b>
+
+            <select size="1" name="salida" class="select" id="puesto">    
+                <option value="0" selected>Seleccione el puesto</option>
+                <option value="4500">Supervisor</option>
+                <option value="3250">Secretaria</option>
+                <option value="2800">Mensajero</option>
+            </select>
+
+            <b><br><br> Ingrese las horas extras</b>
+            <P><div class="divinput"> 
+            <input type="number" placeholder="hh" id="extras" autofocus >   
+            </div>
+            <p>
+
+            <div style="font-size:larger;" id="resultado">
+                <label id="nombreSalida">Nombre:</label><p>
+                <label id="salarioLiquido">Salario Liquido:</label><p>
+                
+            </div>
+            <br><br><br><br><br><br>    
+
+            <div class="divinput3">
+                <input type="button" value="Calcular" class="submit" name="VER" onclick="calculo_salario()">
+            </div>
+
+            <br>
+            </p>
+            </p>
+            </p>
+
+        </form>
+
+    </body>
+
+</html>
